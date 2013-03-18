@@ -1,0 +1,14 @@
+{                                                      
+  "name": "master_role",                                         
+  "default_attributes": { },                              
+  "override_attributes": { },                             
+  "json_class": "Chef::Role",                             
+  "description": "This is just a test role, no big deal.",
+  "chef_type": "role",                                    
+  "run_list": ["recipe[apt]", "recipe[git]", "recipe[htop]", "recipe[git]", "recipe[R]", "recipe[R::snow]", "recipe[mpi]"]
+    "default_attributes" : {
+        "mpi" : {
+            "role": "master"
+        }
+    }
+}                                                         
